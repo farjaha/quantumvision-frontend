@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-quantumvisionfronten-dev-195428-authRole",
+      "UnauthRoleArn": "arn:aws:iam::725602355952:role/amplify-quantumvisionfronten-dev-195428-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::725602355952:role/amplify-quantumvisionfronten-dev-195428-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-quantumvisionfronten-dev-195428-deployment",
+      "UnauthRoleName": "amplify-quantumvisionfronten-dev-195428-unauthRole",
+      "StackName": "amplify-quantumvisionfronten-dev-195428",
+      "StackId": "arn:aws:cloudformation:us-east-2:725602355952:stack/amplify-quantumvisionfronten-dev-195428/61fc88f0-4160-11ee-9bf0-02ae22fdc427",
+      "AmplifyAppId": "d152f2o4ju4lje"
+    },
+    "categories": {
+      "auth": {
+        "quantumvisionfronten4723e5ef": {
+          "userPoolId": "us-east-2_2Q6rbXcWN",
+          "userPoolName": "QVUserPool",
+          "webClientId": "43fon06sj1bimq599r9b2tbice",
+          "nativeClientId": "43fon06sj1bimq599r9b2tbice"
+        }
+      }
+    }
+  }
+}
