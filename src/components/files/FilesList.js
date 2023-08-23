@@ -53,8 +53,11 @@ export const FilesList = () => {
         filename: filename
       }
 
-      const response = await axios.get(`${API_ENDPOINT}/download`, {
+      console.log("requiredData:", requiredData);
+
+      const response = await axios.post(`${API_ENDPOINT}/download`, requiredData, {
         headers: {
+          'Content-Type': 'application/json',
           Authorization: idToken,
         },
         responseType: 'blob',
