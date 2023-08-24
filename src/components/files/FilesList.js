@@ -97,7 +97,7 @@ export const FilesList = () => {
 
   return (
     <div style={{ position: 'relative' }}>
-      <h2 >Files in S3 Bucket:</h2>
+      <h2 >Available Files:</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (
