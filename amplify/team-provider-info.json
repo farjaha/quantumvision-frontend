@@ -13,11 +13,11 @@
     },
     "categories": {
       "auth": {
-        "quantumvisionfronten4723e5ef": {
-          "userPoolId": "us-east-2_2Q6rbXcWN",
+        "quantumvisionfrontenf934b3cd": {
+          "userPoolId": "us-east-2_IrJLLsugX",
           "userPoolName": "QVUserPool",
-          "webClientId": "43fon06sj1bimq599r9b2tbice",
-          "nativeClientId": "43fon06sj1bimq599r9b2tbice"
+          "webClientId": "3pssbadflhtmscuqtlbvbd08m3",
+          "nativeClientId": "3pssbadflhtmscuqtlbvbd08m3"
         }
       }
     }

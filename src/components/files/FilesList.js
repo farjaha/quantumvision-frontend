@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Auth } from 'aws-amplify';
 import { Flex, Table, TableCell, TableRow, TableHead, TableBody } from "@aws-amplify/ui-react";
 
-const API_ENDPOINT = 'https://kxtyyoyea2.execute-api.us-east-2.amazonaws.com/dev';
+const API_ENDPOINT = 'https://1jlpyree0b.execute-api.us-east-2.amazonaws.com/dev/';
 
 export const FilesList = () => {
   const [files, setFiles] = useState([]);

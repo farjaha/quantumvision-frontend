@@ -1,6 +1,6 @@
 {
   "auth": {
-    "quantumvisionfronten4723e5ef": {
+    "quantumvisionfrontenf934b3cd": {
       "customAuth": false,
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
@@ -9,35 +9,35 @@
     }
   },
   "parameters": {
-    "AMPLIFY_auth_quantumvisionfronten4723e5ef_nativeClientId": {
+    "AMPLIFY_auth_quantumvisionfrontenf934b3cd_nativeClientId": {
       "usedBy": [
         {
           "category": "auth",
-          "resourceName": "quantumvisionfronten4723e5ef"
+          "resourceName": "quantumvisionfrontenf934b3cd"
         }
       ]
     },
-    "AMPLIFY_auth_quantumvisionfronten4723e5ef_userPoolId": {
+    "AMPLIFY_auth_quantumvisionfrontenf934b3cd_userPoolId": {
       "usedBy": [
         {
           "category": "auth",
-          "resourceName": "quantumvisionfronten4723e5ef"
+          "resourceName": "quantumvisionfrontenf934b3cd"
         }
       ]
     },
-    "AMPLIFY_auth_quantumvisionfronten4723e5ef_userPoolName": {
+    "AMPLIFY_auth_quantumvisionfrontenf934b3cd_userPoolName": {
       "usedBy": [
         {
           "category": "auth",
-          "resourceName": "quantumvisionfronten4723e5ef"
+          "resourceName": "quantumvisionfrontenf934b3cd"
         }
       ]
     },
-    "AMPLIFY_auth_quantumvisionfronten4723e5ef_webClientId": {
+    "AMPLIFY_auth_quantumvisionfrontenf934b3cd_webClientId": {
       "usedBy": [
         {
           "category": "auth",
-          "resourceName": "quantumvisionfronten4723e5ef"
+          "resourceName": "quantumvisionfrontenf934b3cd"
         }
       ]
     }

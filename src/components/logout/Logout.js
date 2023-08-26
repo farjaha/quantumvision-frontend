@@ -29,7 +29,8 @@ export const Logout = () => {
 
   const handleSignIn = () => {
     // Redirect the user to the sign-in page
-    window.location.href = 'https://qv-auth.auth.us-east-2.amazoncognito.com/oauth2/authorize?client_id=43fon06sj1bimq599r9b2tbice&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F'
+    window.location.href = 'https://qv-auth.auth.us-east-2.amazoncognito.com/oauth2/authorize?client_id=3pssbadflhtmscuqtlbvbd08m3&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F'
+    console.log("logged out");
   };
   return (
     <div className={`sign-out-box ${isSignedOut ? 'visible' : ''}`}>
