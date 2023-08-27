@@ -15,7 +15,7 @@ function App({ signOut, user }) {
   );
 }
 
-export default withAuthenticator(App);
+export default withAuthenticator(App, {hideSignUp: true});
 // import React from 'react';
 // import { Route, Routes, BrowserRouter } from 'react-router-dom';
 // import { Home } from './components/home/Home';
