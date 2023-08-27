@@ -46,7 +46,7 @@ export const Home = () => {
     async function handleSignOut() {
         try {
             window.location.href = signInUrl;
-            // await Auth.signOut();
+            await Auth.signOut();
 
         } catch (error) {
             console.error('Error signing out:', error);
