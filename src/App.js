@@ -1,26 +1,44 @@
-import React from 'react';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Amplify } from 'aws-amplify';
 import { Home } from './components/home/Home';
-import { Logout } from './components/logOut/Logout';
-import {Amplify} from 'aws-amplify';
-import awsconfig from './aws-exports';
 
-Amplify.configure(awsconfig);
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 
-
-function App() {
+function App({ signOut, user }) {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/logout/" element={<Logout />} />
-        </Routes>
-      </BrowserRouter>
-
-    </div>
+    <>
+      <Home handleSignOut={signOut}/>
+    </>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
+// import React from 'react';
+// import { Route, Routes, BrowserRouter } from 'react-router-dom';
+// import { Home } from './components/home/Home';
+// import { Logout } from './components/logOut/Logout';
+// import {Amplify} from 'aws-amplify';
+// import awsconfig from './aws-exports';
+
+// Amplify.configure(awsconfig);
+
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/logout/" element={<Logout />} />
+//         </Routes>
+//       </BrowserRouter>
+
+//     </div>
+//   );
+// }
+
+// export default App;

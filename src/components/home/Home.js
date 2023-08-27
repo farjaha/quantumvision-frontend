@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Header } from '../header/Header';
 import { UserInfo } from '../user_info/UserInfo';
-// import { FilesList } from './files/FilesList';
+import { FilesList } from '../filesList/FilesList';
 import { Auth, Hub } from 'aws-amplify';
 
 const signInUrl = 'https://qv-auth.auth.us-east-2.amazoncognito.com/oauth2/authorize?client_id=3pssbadflhtmscuqtlbvbd08m3&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F';
 
-export const Home = () => {
+export const Home = (props) => {
     // const [isTokenExpired, setIsTokenExpired] = useState(false);
 
     // useEffect(() => {
@@ -62,7 +62,8 @@ export const Home = () => {
         <>
             <Header />
             <UserInfo />
-          <button onClick={handleSignOut} style={{ padding: '10px 40px', margin: '0 20px', border: 'none', background: 'grey' }}>Sign out</button>
+            <FilesList />
+          <button onClick={props.handleSignOut} style={{ padding: '10px 40px', margin: '0 20px', border: 'none', background: 'grey' }}>Sign out</button>
         </>
     )
 }
