@@ -4,6 +4,8 @@ import './logOut.css';
 
 const signInUrl = 'https://qv-auth.auth.us-east-2.amazoncognito.com/oauth2/authorize?client_id=3pssbadflhtmscuqtlbvbd08m3&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F';
 export const Logout = () => {
+    console.log("You are viewving logout page");
+    
   const [isSignedOut, setIsSignedOut] = useState(false);
 
   useEffect(() => {
