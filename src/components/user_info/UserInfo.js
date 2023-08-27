@@ -3,6 +3,7 @@ import { Flex, Table, TableCell, TableRow, TableHead, TableBody } from "@aws-amp
 import { Auth } from 'aws-amplify';
 import './userInfo.css';
 
+// This component gets the attributes of the current authenticated user from backend and show it on the frontend of our solution
 export const UserInfo = () => {
     const [userAttributes, setUserAttributes] = useState({});
 

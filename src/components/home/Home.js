@@ -3,8 +3,8 @@ import { UserInfo } from '../user_info/UserInfo';
 import { FilesList } from '../filesList/FilesList';
 import './home.css';
 
+// Home component that brings all the components together and it is the main page for our solution
 export const Home = (props) => {
-
     return (
         <>
             <Header />

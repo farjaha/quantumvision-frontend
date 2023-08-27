@@ -5,6 +5,7 @@ import { Flex, Table, TableCell, TableRow, TableHead, TableBody } from "@aws-amp
 
 const API_ENDPOINT = 'https://1jlpyree0b.execute-api.us-east-2.amazonaws.com/dev/';
 
+// This component list all the available files to the user
 export const FilesList = () => {
   const [files, setFiles] = useState([]);
   const [loading, setLoading] = useState(true);
