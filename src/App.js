@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { Home } from './components/home/Home';
-import { Logout } from './components/logout/Logout';
+import { Logout } from './components/logOut/Logout';
 import {Amplify} from 'aws-amplify';
 import awsconfig from './aws-exports';
 
