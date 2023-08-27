@@ -97,11 +97,11 @@ export const FilesList = () => {
 
   return (
     <div style={{ position: 'relative' }}>
-      <h2 >Available Files:</h2>
+      <h2 style={{margin: '15px', paddingTop: '15px'}}>Available Files:</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <Flex direction="column">
+        <Flex direction="column" style={{margin: '15px'}}>
           <Table className="custom-table">
             <TableHead>
               <TableRow>

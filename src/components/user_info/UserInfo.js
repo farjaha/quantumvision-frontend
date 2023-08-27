@@ -28,7 +28,7 @@ export const UserInfo = () => {
     console.log("signed user info:", userAttributes)
 
     return (
-        <Flex direction="column">
+        <Flex direction="column" style={{margin: '15px'}}>
             <Table className="custom-table">
                 <TableHead>
                     <TableRow>
