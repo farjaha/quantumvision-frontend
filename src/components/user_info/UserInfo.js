@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Flex, Table, TableCell, TableRow, TableHead } from "@aws-amplify/ui-react";
+import { Flex, Table, TableCell, TableRow, TableHead, TableBody } from "@aws-amplify/ui-react";
 import { Auth } from 'aws-amplify';
 import './userInfo.css';
 
@@ -37,11 +37,13 @@ export const UserInfo = () => {
                         <TableCell as="th">User Team</TableCell>
                     </TableRow>
                 </TableHead>
-                <TableRow>
-                    <TableCell>{userAttributes['email']}</TableCell>
-                    <TableCell>{userAttributes['custom:clearance_level']}</TableCell>
-                    <TableCell>{userAttributes['custom:team']}</TableCell>
-                </TableRow>
+                <TableBody>
+                    <TableRow>
+                        <TableCell>{userAttributes['email']}</TableCell>
+                        <TableCell>{userAttributes['custom:clearance_level']}</TableCell>
+                        <TableCell>{userAttributes['custom:team']}</TableCell>
+                    </TableRow>
+                </TableBody>
             </Table>
         </Flex>
     );

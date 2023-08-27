@@ -12,11 +12,21 @@ export const Home = () => {
         const checkTokenExpiration = async () => {
             try {
                 const user = await Auth.currentAuthenticatedUser();
-                console.log(user)
+                const expirationTime = user.signInUserSession.idToken.payload.exp * 1000;
+                const currentTime = new Date().getTime();
+
+                if (currentTime >= expirationTime) {
+                    console.log("Token is expired!!!");
+                    setIsTokenExpired(true);
+                }
+                else {
+                    console.log("Token is still valid!!!");
+                }
             } catch (error) {
                 console.error('Error checking token expiration:', error);
             }
-        }
+        };
+        checkTokenExpiration();
     })
 //   async function handleSignOut() {
 //     try {
