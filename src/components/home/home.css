@@ -1,0 +1,10 @@
+.signout-button {
+    padding: '10px 40px';
+    margin: '0 20px';
+    border: 'none';
+    background: 'grey';
+}
+
+.signout-button:hover {
+    background: lightgray;
+}

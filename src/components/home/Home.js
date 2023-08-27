@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
 import { Header } from '../header/Header';
 import { UserInfo } from '../user_info/UserInfo';
 import { FilesList } from '../filesList/FilesList';
+import './home.css';
 
 export const Home = (props) => {
 
@@ -11,7 +11,7 @@ export const Home = (props) => {
             <UserInfo />
             <FilesList />
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
-                <button onClick={props.handleSignOut} style={{ padding: '10px 40px', margin: '0 20px', border: 'none', background: 'grey' }}>Sign out</button>
+                <button onClick={props.handleSignOut} className='signout-button'>Sign out</button>
             </div>
         </>
     )
