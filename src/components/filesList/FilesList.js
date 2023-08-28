@@ -98,11 +98,12 @@ export const FilesList = () => {
 
   return (
     <div style={{ position: 'relative' }}>
-      <h2 style={{margin: '15px', paddingTop: '15px'}}>Available Files:</h2>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <Flex direction="column" style={{margin: '15px'}}>
+      <h2 style={{ margin: '15px', paddingTop: '15px' }}>Available Files:</h2>
+
+      <Flex direction="column" style={{ margin: '15px' }}>
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
           <Table className="custom-table">
             <TableHead>
               <TableRow>
@@ -112,8 +113,8 @@ export const FilesList = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {loading ? (
-                <td colSpan="3">Loading...</td>
+              {files.length === 0 ? (
+                <p>No files available or you don't have the permission to access the files.</p>
               ) : (
                 files.map((file, index) => (
                   <TableRow key={index}>
@@ -127,8 +128,8 @@ export const FilesList = () => {
               )}
             </TableBody>
           </Table>
-        </Flex>
       )}
+      </Flex>
     </div>
   );
 };
