@@ -78,7 +78,7 @@ export const FilesList = () => {
       const downloadUrl = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = downloadUrl;
-      a.download = `${userTeam}_${filename}`;
+      a.download = `${userLevel}_${userTeam}_${filename}`;
       a.click();
       URL.revokeObjectURL(downloadUrl);
     } catch (error) {
