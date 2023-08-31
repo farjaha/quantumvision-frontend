@@ -35,7 +35,7 @@ export const FilesList = () => {
         }
         setUserAttributes(userAttributes);
         setUserData({ userLevel, userTeam });
-        const response = await axios.post(`${API_ENDPOINT}/qvFiles`, requiredData, {
+        const response = await axios.post(`${API_ENDPOINT}/qv-files`, requiredData, {
           headers: {
             'Content-Type': 'application/json',
             Authorization: idToken,
@@ -66,7 +66,7 @@ export const FilesList = () => {
 
       console.log("requiredData:", requiredData);
 
-      const response = await axios.post(`${API_ENDPOINT}/download`, requiredData, {
+      const response = await axios.post(`${API_ENDPOINT}/download-files`, requiredData, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: idToken,
